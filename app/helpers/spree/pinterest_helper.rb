@@ -7,7 +7,7 @@ module Spree
       media = escape absolute_image_url(product.images.first.attachment.url)
       description = escape product.name
 
-      link_to("Pin It",
+      link_to(image_tag("http://assets.pinterest.com/images/pidgets/pin_it_button.png", alt: 'Pin It'),
               "http://pinterest.com/pin/create/button/?url=#{url}&media=#{media}&description=#{description}",
               :class => "pin-it-button",
               "count-layout" => "horizontal").html_safe
