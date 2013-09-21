@@ -1,4 +1,9 @@
-/*
- *= require store/spree_core
- *= require_tree .
-*/
+iframe[src*='pinit.html']
+  margin-top: 4px
+
+[data-hook='products_list_item']
+  iframe[src*='pinit.html']
+    float: left
+
+  span.price
+    float: right
